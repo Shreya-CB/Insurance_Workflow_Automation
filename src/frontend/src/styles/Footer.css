@@ -1,0 +1,17 @@
+.footer {
+  background-color: #0b2c4d; /* blue-900 shade */
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #e0e0e0;
+}

@@ -1,0 +1,8 @@
+.family-page {
+  margin-left: 60px;  
+  min-height: 92vh;
+}
+
+.sidebar.open ~ .family-page {
+  margin-left: 200px;
+}

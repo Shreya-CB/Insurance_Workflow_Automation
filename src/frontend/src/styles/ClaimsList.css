@@ -1,0 +1,10 @@
+.sidebar.open ~ .claim-list {
+  margin-left: 200px;
+}
+
+.claim-list {
+  margin-left: 60px;
+  padding: 40px;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}

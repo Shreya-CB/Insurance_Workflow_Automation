@@ -1,0 +1,6 @@
+backend/node_modules/
+frontend/node_modules/
+.env
+uploads/kyc/
+backend/uploads/kyc/
+backend/tests/

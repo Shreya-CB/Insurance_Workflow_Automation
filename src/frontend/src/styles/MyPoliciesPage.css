@@ -1,0 +1,86 @@
+.mypolicies-page {
+  padding: 40px;
+  background-color: #f8faf8;
+  min-height: 92vh;
+  text-align: center;
+}
+
+.mypolicies-header {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #204d2a;
+}
+
+.mypolicies-error {
+  color: #b30000;
+  font-weight: bold;
+}
+
+.mypolicies-empty {
+  font-size: 18px;
+  color: #555;
+}
+
+.mypolicies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.policy-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.policy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.policy-card h3 {
+  color: #1c5328;
+  margin-bottom: 10px;
+}
+
+.policy-card p {
+  margin: 4px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.download-btn {
+  margin-top: 10px;
+  background-color: #1c7a39;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #146628;
+}
+
+.mypolicies-loader {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #444;
+}
+
+.sidebar.open ~ .mypolicies-page {
+  margin-left: 200px;
+}
+
+.mypolicies-page {
+  margin-left: 50px;  
+}

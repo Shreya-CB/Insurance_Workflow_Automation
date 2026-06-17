@@ -1,0 +1,158 @@
+/* === Global Auth Page Styling === */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #d0e8ff, #f8fbff);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+/* === Card === */
+.auth-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* === Title === */
+.auth-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #003b73;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* === Toggle Buttons (Email / OTP) === */
+.toggle-group {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 119, 255, 0.15);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 12px 14px;
+  /* border: none; */
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+  background: linear-gradient(90deg, #0077ff, #00c4ff);
+  color: white;
+}
+
+.toggle-btn.inactive {
+  background-color: #e3f2fd;
+  color: #0077ff;
+}
+
+.toggle-btn:hover:not(.active) {
+  background-color: #d0e9ff;
+}
+
+/* === Inputs === */
+.auth-input {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  outline: none;
+  margin-bottom: 14px;
+  transition: all 0.2s ease;
+  background-color: #f9fbff;
+}
+
+.auth-input:focus {
+  border-color: #0077ff;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 119, 255, 0.3);
+}
+
+/* === Buttons === */
+.auth-button {
+  width: 100%;
+  background: linear-gradient(90deg, #0077ff, #00c4ff);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.auth-button:hover {
+  background: linear-gradient(90deg, #005ed4, #00a9e0);
+  transform: scale(1.03);
+}
+
+/* === Links & Text === */
+.auth-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.auth-link a {
+  color: #0077ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* === Message === */
+.auth-msg {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.auth-msg.success {
+  color: #2e7d32;
+}
+
+.auth-msg.error {
+  color: #d32f2f;
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .auth-title {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,17 @@
+/* src/styles/Dashboard.css */
+.dashboard {
+  display: flex;
+  min-height: 92vh;
+  background-color: #f8f9f8;
+}
+
+.dashboard-content {
+  margin-left: 60px;
+  padding: 40px;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.open ~ .dashboard-content {
+  margin-left: 200px;
+}

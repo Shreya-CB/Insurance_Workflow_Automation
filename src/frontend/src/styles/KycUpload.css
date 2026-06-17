@@ -1,0 +1,8 @@
+.kyc-upload {
+  margin-left: 50px;
+  min-height: 92vh;  
+}
+
+.sidebar.open ~ .kyc-upload {
+  margin-left: 150px;
+}

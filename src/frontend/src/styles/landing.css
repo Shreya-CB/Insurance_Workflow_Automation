@@ -1,0 +1,104 @@
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #d0e8ff, #f8fbff);
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.landing-logo {
+  font-size: 1.8rem;
+  color: #003b73;
+  font-weight: 700;
+}
+
+.nav-link {
+  margin-left: 1.5rem;
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.landing-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+
+.landing-text {
+  max-width: 500px;
+}
+
+.landing-text h2 {
+  font-size: 2.2rem;
+  color: #003b73;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.landing-text p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.landing-btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.landing-btn.primary {
+  background: linear-gradient(90deg, #0077ff, #00c4ff);
+  color: white;
+}
+
+.landing-btn.primary:hover {
+  background: linear-gradient(90deg, #005ed4, #00a9e0);
+}
+
+.landing-btn.secondary {
+  background: white;
+  color: #0077ff;
+  border: 2px solid #0077ff;
+}
+
+.landing-btn.secondary:hover {
+  background: #e6f2ff;
+}
+
+.landing-illustration img {
+  max-width: 420px;
+}
+
+.landing-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #e0e0e0;
+}
